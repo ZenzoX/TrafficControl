@@ -10,11 +10,14 @@ public class TrafficLight {
         currentColor = 1;
     }
 
+    //declares the amount of lights with the corresponding id
     public TrafficLight(int id, int numberOfLights) {
         this.id = id;
         this.lightAmount = numberOfLights;
     }
 
+    //changes what color is shown by using cases
+    //returns the color
     public String showColor(int light) {
 
         String result;
@@ -43,6 +46,7 @@ public class TrafficLight {
        return id;
     }
 
+    //shows the id and color result
     public void showColorAndId(int light) {
         String result;
         result = showColor(light);
@@ -54,6 +58,7 @@ public class TrafficLight {
         );
     }
 
+    //makes sure that the number is never lower than 0
     public boolean isPositiveNumber(int number) {
         return number >= 0;
     }
