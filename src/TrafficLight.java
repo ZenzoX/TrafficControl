@@ -1,5 +1,5 @@
 public class TrafficLight {
-//bjorn is kkr dik
+
     private int id;
     private int numberOfLights;
     private int defaultColor;
@@ -58,4 +58,19 @@ public class TrafficLight {
         return number >= 0;
     }
 
+    public int getDefaultColor() {
+        return defaultColor;
+    }
+
+    public void setDefaultColor(int defaultColor) {
+        this.defaultColor = defaultColor;
+    }
+
+    public int getNumberOfLights() {
+        return numberOfLights;
+    }
+
+    public void setNumberOfLights(int numberOfLights) {
+        this.numberOfLights = numberOfLights;
+    }
 }
