@@ -1,18 +1,18 @@
 public class TrafficLight {
 
     private int id;
-    private int numberOfLights;
-    private int defaultColor;
+    private int lightAmount;
+    private int currentColor;
 
     public TrafficLight() {
         id = 0;
-        numberOfLights = 3;
-        defaultColor = 1;
+        lightAmount = 3;
+        currentColor = 1;
     }
 
     public TrafficLight(int id, int numberOfLights) {
         this.id = id;
-        this.numberOfLights = numberOfLights;
+        this.lightAmount = numberOfLights;
     }
 
     public String showColor(int light) {
@@ -58,19 +58,19 @@ public class TrafficLight {
         return number >= 0;
     }
 
-    public int getDefaultColor() {
-        return defaultColor;
+    public int getCurrentColor() {
+        return currentColor;
     }
 
-    public void setDefaultColor(int defaultColor) {
-        this.defaultColor = defaultColor;
+    public void setCurrentColor(int currentColor) {
+        this.currentColor = currentColor;
     }
 
-    public int getNumberOfLights() {
-        return numberOfLights;
+    public int getLightAmount() {
+        return lightAmount;
     }
 
-    public void setNumberOfLights(int numberOfLights) {
-        this.numberOfLights = numberOfLights;
+    public void setLightAmount(int lightAmount) {
+        this.lightAmount = lightAmount;
     }
 }
