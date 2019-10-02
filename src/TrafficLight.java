@@ -1,5 +1,5 @@
 public class TrafficLight {
-
+//bjorn is kkr dik
     private int id;
     private int numberOfLights;
     private int defaultColor;
